@@ -41,9 +41,7 @@ while (cap.isOpened()):
     final_output = cv2.addWeighted(res1, 1, res2, 1, 0)
 
     cv2.imshow('invisible', final_output)
-    k = cv2.waitKey(10)
-    if k == 27:
-        break
+    
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
